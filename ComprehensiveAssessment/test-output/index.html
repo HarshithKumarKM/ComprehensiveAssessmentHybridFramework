@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Urbonladder" class="navigator-link">
-              <span class="suite-name border-passed">Urbonladder</span>
+              <span class="suite-name border-failed">Urbonladder</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Urbonladder" class="navigator-link ">
-                    <span>C:\Users\mindsdet339\eclipse-workspace\ComprehensiveAssessment\testng.xml</span>
+                    <span>C:\Users\mindsdet339\git\ComprehensiveAssessmentHybridFramework\ComprehensiveAssessment\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Urbonladder" class="hide-methods failed suite-Urbonladder"> (hide)</a> <!-- hide-methods failed suite-Urbonladder -->
+                      <a href="#" panel-name="suite-Urbonladder" class="show-methods failed suite-Urbonladder"> (show)</a> <!-- show-methods failed suite-Urbonladder -->
+                    </span>
+                    <div class="method-list-content failed suite-Urbonladder">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Urbonladder" title="com.mindtree.testcases.TestCase8" class="method navigator-link" hash-for-method="compare">compare</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Urbonladder -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Urbonladder" title="com.mindtree.testcases.TestCase3" class="method navigator-link" hash-for-method="cart">cart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Urbonladder" title="com.mindtree.testcases.TestCase8" class="method navigator-link" hash-for-method="compare">compare</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,6 +173,102 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Urbonladder" class="panel Urbonladder">
+          <div class="suite-Urbonladder-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase8</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compare">
+                  </a> <!-- compare -->
+                  <span class="method-name">compare</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (40, 505)
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MINDC1D206&apos;, ip: &apos;172.16.97.42&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MINDSD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50539}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f65e6f9ac6d90c3ee124736683063de
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.reusability.WebDriverHelper.clckOn(WebDriverHelper.java:11)
+	at com.mindtree.pageobject.CompareProducts.clickCompare(CompareProducts.java:44)
+	at com.mindtree.testcases.TestCase8.compare(TestCase8.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-failed -->
+          <div class="suite-Urbonladder-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-passed -->
+          <div class="suite-Urbonladder-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase5</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="wishlist">
+                  </a> <!-- wishlist -->
+                  <span class="method-name">wishlist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-passed -->
+          <div class="suite-Urbonladder-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="study">
+                  </a> <!-- study -->
+                  <span class="method-name">study</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-passed -->
+          <div class="suite-Urbonladder-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase6</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="explore">
+                  </a> <!-- explore -->
+                  <span class="method-name">explore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-passed -->
           <div class="suite-Urbonladder-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -175,6 +280,21 @@
                   <a name="shipDelivery">
                   </a> <!-- shipDelivery -->
                   <span class="method-name">shipDelivery</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Urbonladder-class-passed -->
+          <div class="suite-Urbonladder-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.mindtree.testcases.TestCase9</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="aboutus">
+                  </a> <!-- aboutus -->
+                  <span class="method-name">aboutus</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,51 +332,6 @@
           <div class="suite-Urbonladder-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase8</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="compare">
-                  </a> <!-- compare -->
-                  <span class="method-name">compare</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase9</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="aboutus">
-                  </a> <!-- aboutus -->
-                  <span class="method-name">aboutus</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase5</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="wishlist">
-                  </a> <!-- wishlist -->
-                  <span class="method-name">wishlist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.mindtree.testcases.TestCase7</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -269,55 +344,10 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="search">
-                  </a> <!-- search -->
-                  <span class="method-name">search</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="study">
-                  </a> <!-- study -->
-                  <span class="method-name">study</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
-          <div class="suite-Urbonladder-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.mindtree.testcases.TestCase6</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="explore">
-                  </a> <!-- explore -->
-                  <span class="method-name">explore</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Urbonladder-class-passed -->
         </div> <!-- panel Urbonladder -->
         <div panel-name="test-xml-Urbonladder" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mindsdet339\eclipse-workspace\ComprehensiveAssessment\testng.xml</span>
+            <span class="header-content">C:\Users\mindsdet339\git\ComprehensiveAssessmentHybridFramework\ComprehensiveAssessment\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -382,48 +412,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'search')
 data.setCell(0, 2, 'com.mindtree.testcases.TestCase2')
-data.setCell(0, 3, 32891);
+data.setCell(0, 3, 29189);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
-data.setCell(1, 2, 'com.mindtree.testcases.TestCase1')
-data.setCell(1, 3, 17111);
+data.setCell(1, 1, 'compare')
+data.setCell(1, 2, 'com.mindtree.testcases.TestCase8')
+data.setCell(1, 3, 16641);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'compare')
-data.setCell(2, 2, 'com.mindtree.testcases.TestCase8')
-data.setCell(2, 3, 17076);
+data.setCell(2, 1, 'Login')
+data.setCell(2, 2, 'com.mindtree.testcases.TestCase1')
+data.setCell(2, 3, 16346);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'study')
 data.setCell(3, 2, 'com.mindtree.testcases.TestCase4')
-data.setCell(3, 3, 11456);
+data.setCell(3, 3, 11660);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'cart')
 data.setCell(4, 2, 'com.mindtree.testcases.TestCase3')
-data.setCell(4, 3, 11326);
+data.setCell(4, 3, 8796);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'wishlist')
-data.setCell(5, 2, 'com.mindtree.testcases.TestCase5')
-data.setCell(5, 3, 8325);
+data.setCell(5, 1, 'giftcards')
+data.setCell(5, 2, 'com.mindtree.testcases.TestCase7')
+data.setCell(5, 3, 8631);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'giftcards')
-data.setCell(6, 2, 'com.mindtree.testcases.TestCase7')
-data.setCell(6, 3, 7752);
+data.setCell(6, 1, 'wishlist')
+data.setCell(6, 2, 'com.mindtree.testcases.TestCase5')
+data.setCell(6, 3, 7873);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'explore')
 data.setCell(7, 2, 'com.mindtree.testcases.TestCase6')
-data.setCell(7, 3, 6538);
+data.setCell(7, 3, 6584);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'shipDelivery')
-data.setCell(8, 2, 'com.mindtree.testcases.TestCase10')
-data.setCell(8, 3, 6069);
+data.setCell(8, 1, 'aboutus')
+data.setCell(8, 2, 'com.mindtree.testcases.TestCase9')
+data.setCell(8, 3, 6259);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'aboutus')
-data.setCell(9, 2, 'com.mindtree.testcases.TestCase9')
-data.setCell(9, 3, 5782);
+data.setCell(9, 1, 'shipDelivery')
+data.setCell(9, 2, 'com.mindtree.testcases.TestCase10')
+data.setCell(9, 3, 5947);
 window.suiteTableData['Urbonladder']= { tableData: data, tableDiv: 'times-div-Urbonladder'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Urbonladder">
               </div> <!-- times-div-Urbonladder -->
             </div> <!-- times-div -->
@@ -456,113 +486,115 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">31177 ms</span>
+                <span class="method-start">5531 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">48311 ms</span>
+                <span class="method-start">21897 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">search</span>
-                <span class="method-start">48312 ms</span>
+                <span class="method-start">21906 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase3</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">81215 ms</span>
+                <span class="method-start">51100 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">cart</span>
-                <span class="method-start">81217 ms</span>
+                <span class="method-start">51112 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase4</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">92545 ms</span>
+                <span class="method-start">59910 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">study</span>
-                <span class="method-start">92546 ms</span>
+                <span class="method-start">59920 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase5</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">104005 ms</span>
+                <span class="method-start">71584 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">wishlist</span>
-                <span class="method-start">104007 ms</span>
+                <span class="method-start">71593 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase6</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">112334 ms</span>
+                <span class="method-start">79470 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">explore</span>
-                <span class="method-start">112335 ms</span>
+                <span class="method-start">79482 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase7</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">118875 ms</span>
+                <span class="method-start">86069 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">giftcards</span>
-                <span class="method-start">118876 ms</span>
+                <span class="method-start">86087 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase8</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">126634 ms</span>
+                <span class="method-start">94719 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">compare</span>
-                <span class="method-start">126643 ms</span>
+                <span class="method-start">94728 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase9</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">143721 ms</span>
+                <span class="method-start">111376 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">aboutus</span>
-                <span class="method-start">143722 ms</span>
+                <span class="method-start">111385 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase10</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">149505 ms</span>
+                <span class="method-start">117647 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">shipDelivery</span>
-                <span class="method-start">149507 ms</span>
+                <span class="method-start">117655 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.mindtree.testcases.TestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">end</span>
-                <span class="method-start">155577 ms</span>
+                <span class="method-start">123603 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
