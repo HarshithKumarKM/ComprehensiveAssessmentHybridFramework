@@ -256,3 +256,35 @@
 [INFO ] 2022-05-19 08:21:40.0233 [main] CreateLog Successfully clicked on About Us
 [INFO ] 2022-05-19 08:21:43.0460 [main] CreateLog Succefully clicked on Ship and Delivery
 [INFO ] 2022-05-19 08:21:45.0498 [main] CreateLog Successfully verified ship and delivery page
+[INFO ] 2022-05-19 10:54:28.0834 [main] CreateLog Successfully Hovered on login
+[INFO ] 2022-05-19 10:54:30.0938 [main] CreateLog Successfully clicked on login
+[INFO ] 2022-05-19 10:54:37.0115 [main] CreateLog Successfully enterd email
+[INFO ] 2022-05-19 10:54:39.0202 [main] CreateLog Successfully enterd password
+[INFO ] 2022-05-19 10:54:42.0340 [main] CreateLog Successfully clicked on login
+[INFO ] 2022-05-19 10:54:44.0806 [main] CreateLog Successfully sent text into search bar
+[INFO ] 2022-05-19 10:54:47.0807 [main] CreateLog Successfully clicked on search icon and navigated to result page
+[INFO ] 2022-05-19 10:54:52.0577 [main] CreateLog Successfully selected the item
+[INFO ] 2022-05-19 10:55:06.0251 [main] CreateLog item added to cart
+[INFO ] 2022-05-19 10:55:16.0043 [main] CreateLog successfully clicked on cart icon
+[INFO ] 2022-05-19 10:55:18.0084 [main] CreateLog Item successfully verified in the cart
+[INFO ] 2022-05-19 10:55:22.0299 [main] CreateLog Successfully Removed item from the cart 
+[INFO ] 2022-05-19 10:55:23.0342 [main] CreateLog Successfully Hovered on studys section in HomePage
+[INFO ] 2022-05-19 10:55:29.0624 [main] CreateLog Successfully clicked on studytable
+[INFO ] 2022-05-19 10:55:31.0750 [main] CreateLog added to wishlist
+[INFO ] 2022-05-19 10:55:35.0311 [main] CreateLog Successfully clicked on wishlistIcon
+[INFO ] 2022-05-19 10:55:37.0348 [main] CreateLog Item successfully verified in the wishlist
+[INFO ] 2022-05-19 10:55:39.0471 [main] CreateLog Successfully removed item from wishlist
+[INFO ] 2022-05-19 10:55:43.0485 [main] CreateLog Successfully clicked on beds in explore section
+[INFO ] 2022-05-19 10:55:45.0520 [main] CreateLog Text is successfully verified in the explore section
+[INFO ] 2022-05-19 10:55:50.0517 [main] CreateLog Succefully clicked on GiftCards
+[INFO ] 2022-05-19 10:55:52.0552 [main] CreateLog Successfully verified gift card page
+[INFO ] 2022-05-19 10:55:55.0819 [main] CreateLog Successfully clicked docker section
+[INFO ] 2022-05-19 10:55:58.0974 [main] CreateLog Successfully clicked on wall mirror in decor dropdown 
+[INFO ] 2022-05-19 10:56:01.0142 [main] CreateLog Successfully hovered on product1
+[INFO ] 2022-05-19 10:56:03.0266 [main] CreateLog Successfully added product1 to compare
+[INFO ] 2022-05-19 10:56:05.0417 [main] CreateLog Successfully hovered on product2
+[INFO ] 2022-05-19 10:56:07.0632 [main] CreateLog Successfully added product1 to compare
+[INFO ] 2022-05-19 10:56:12.0083 [main] CreateLog Successfully clicked on About Us
+[INFO ] 2022-05-19 10:56:14.0126 [main] CreateLog Successfully verified About Us page
+[INFO ] 2022-05-19 10:56:17.0947 [main] CreateLog Succefully clicked on Ship and Delivery
+[INFO ] 2022-05-19 10:56:19.0983 [main] CreateLog Successfully verified ship and delivery page
