@@ -26,7 +26,7 @@ public class TestCase3 extends BaseClass{
 		Thread.sleep(2000);
         cart.verifyProduct();
         Thread.sleep(2000);
-        cart.removeItem();
+     //  cart.removeItem();
 		SnapShots.captureScreen(driver, "cart");
 		navigateHome();
 
