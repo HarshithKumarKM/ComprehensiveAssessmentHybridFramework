@@ -20,7 +20,7 @@ public class CompareProducts {
 
 	public void clickMirror() {
 		helper.clckOn(CompareProductsUi.mirror);
-		log.info("Successfully clicked on wall mirror in decor dropdown ");
+		log.info("Successfully clicked on wall art in decor dropdown ");
 	}
 	
 	public void product1hover() {

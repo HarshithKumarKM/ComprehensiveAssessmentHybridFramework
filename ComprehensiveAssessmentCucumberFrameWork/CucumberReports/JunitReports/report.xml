@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="199.203">
-    <testcase classname="Feature to test the Urbanladder website" name="verify the login page with valid inputs" time="22.358">
-        <system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="240.277">
+<testcase classname="Feature to test the Urbanladder website" name="verify the login page with valid inputs" time="21.578">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
 And click on the login and land on loginpage................................passed
 When user enters the harshithkrnagar0000@gmail.com in emailbox..............passed
 And enter the Pa##w0rd in passwordbox.......................................passed
 Then click on login button..................................................passed
 And Take screenshot.........................................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should search the product and add it to cart" time="47.512">
-        <system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should search the product and add it to cart" time="48.561">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
 And click on the login and land on loginpage................................passed
 When user enters the <email> in emailbox....................................passed
 And enter the <password> in passwordbox.....................................passed
@@ -21,51 +21,21 @@ When user click on the product it navigated to product details..............pass
 And the product should be added to cart.....................................passed
 Then Take sceenshot and navigate back.......................................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should verify the product added to cart" time="6.093">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log In&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MINDC1D206', ip: '172.16.97.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MINDSD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 795a1b15bf2f9cf57438be33b8230f04&#10;*** Element info: {Using=link text, value=Log In}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given move the mouse on login icon in homepage..............................passed
-And click on the login and land on loginpage................................failed
-When user enters the <email> in emailbox....................................skipped
-And enter the <password> in passwordbox.....................................skipped
-Then click on login button..................................................skipped
-Given Click on carticon in home page........................................skipped
-When user navigated to cart verify the product present......................skipped
-And remove the added item from the cart.....................................skipped
-Then take screenshot and navigate back......................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Log In"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MINDC1D206', ip: '172.16.97.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\MINDSD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 795a1b15bf2f9cf57438be33b8230f04
-*** Element info: {Using=link text, value=Log In}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.mindtree.reusability.WebDriverHelper.clckOn(WebDriverHelper.java:11)
-	at com.mindtree.pageobject.HomePage.loginclick(HomePage.java:27)
-	at com.mindtree.stepDefinitions.StepDefinition.click_on_the_login_and_land_on_loginpage(StepDefinition.java:68)
-	at ✽.click on the login and land on loginpage(file:///C:/Users/mindsdet339/eclipse-workspace/ComprehensiveAssessmentCucumberFrameWork/./src/test/resources/UrbanLadderFeatures/Feature-Urbanladder.feature:39)
-]]></failure>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should select the product from study dropdown and to wishlist" time="30.687">
-        <system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should verify the product added to cart" time="31.089">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
+And click on the login and land on loginpage................................passed
+When user enters the <email> in emailbox....................................passed
+And enter the <password> in passwordbox.....................................passed
+Then click on login button..................................................passed
+Given Click on carticon in home page........................................passed
+When user navigated to cart verify the product present......................passed
+And remove the added item from the cart.....................................passed
+Then take screenshot and navigate back......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should select the product from study dropdown and to wishlist" time="30.826">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
 And click on the login and land on loginpage................................passed
 When user enters the <email> in emailbox....................................passed
 And enter the <password> in passwordbox.....................................passed
@@ -75,9 +45,9 @@ When user should click the item from study dropdown.........................pass
 And in the result page add the item to wishlist.............................passed
 Then take screenshot and navigate from study page to home page..............passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should verify the product added to wishlist" time="26.982">
-        <system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should verify the product added to wishlist" time="28.699">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
 And click on the login and land on loginpage................................passed
 When user enters the <email> in emailbox....................................passed
 And enter the <password> in passwordbox.....................................passed
@@ -87,45 +57,45 @@ When user navigated to wishlist verify the product added....................pass
 And remove the added item from wishlist.....................................passed
 Then take screenshot and navigate from wishlist to home page................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should verify beds in explore products section" time="8.894">
-        <system-out><![CDATA[Given user should click on beds in explore products section.................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should verify beds in explore products section" time="9.734">
+<system-out><![CDATA[Given user should click on beds in explore products section.................passed
 And verify it is navigated to page by verifying the text....................passed
 Then take screenshot and navigate from beds  to home page...................passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should verify the Gift cards in home page" time="10.999">
-        <system-out><![CDATA[Given click on Gift Cards icon in home page.................................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should verify the Gift cards in home page" time="11.932">
+<system-out><![CDATA[Given click on Gift Cards icon in home page.................................passed
 When navigated to result page verify the text present.......................passed
 Then take screenshot and navigate from Gift card to home page...............passed
 ]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should select two products from decor section and compare" time="28.315">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given move the mouse on login icon in homepage..............................passed
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="user should select two products from decor section and compare" time="36.689">
+<system-out><![CDATA[Given move the mouse on login icon in homepage..............................passed
 And click on the login and land on loginpage................................passed
 When user enters the <email> in emailbox....................................passed
 And enter the <password> in passwordbox.....................................passed
 Then click on login button..................................................passed
-Given user should click Decor section.......................................passed
-And click on the WallMirror in the decor dropdown...........................passed
-When navigated to result page haver on product 1............................passed
-And add product1 to add to compare..........................................passed
-Then user should hover on the product2......................................undefined
-And add click on add to compare in product2.................................skipped
-And click on compare button.................................................skipped
-Then cpature screenshot and navigate back to home page......................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="user should verify the about us section in the footer" time="6.464">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user should click on the about us in footer...........................passed
-When navigated to about us page verify the text present.....................undefined
-Then Take screen shot and navigate from about us page to home page..........skipped
-]]></failure>
-    </testcase>
-    <testcase classname="Feature to test the Urbanladder website" name="verify the text in the shipping and delivery in the footer" time="10.436">
-        <system-out><![CDATA[Given click on the shipping & delivery in the footer........................passed
+Given click on the Decor dropdown in the homePage...........................passed
+And select Wall art from the dropdown.......................................passed
+When it is navigated to the next page hover on product1.....................passed
+And click on add to compare to add the product1 to compare..................passed
+Then User should hover on the Product2......................................passed
+And add Product2 to add to compare..........................................passed
+And click on compare button.................................................passed
+Then cpature screenshot and navigate back to home page from wall art page...passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="User should verify the About Us Page by verifying the text" time="10.33">
+<system-out><![CDATA[Given User should click on the About us in the footer section...............passed
+When it is navigated to About us page verify the text in the page...........passed
+Then take snapshot of the About us page and navigate back to the home page..passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test the Urbanladder website" name="verify the text in the shipping and delivery in the footer" time="10.477">
+<system-out><![CDATA[Given click on the shipping & delivery in the footer........................passed
 When navigated to shipping and delivery page verify the text................passed
 Then capture screenshot and navigate from shipping page to home page........passed
 ]]></system-out>
-    </testcase>
+</testcase>
 </testsuite>

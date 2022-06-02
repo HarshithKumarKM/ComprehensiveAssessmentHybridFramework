@@ -88,20 +88,20 @@ And click on the login and land on loginpage
 When user enters the <email> in emailbox
 And enter the <password> in passwordbox
 Then click on login button
-Given user should click Decor section
-And click on the WallMirror in the decor dropdown
-When navigated to result page haver on product 1
-And add product1 to add to compare
-Then user should hover on the product2 
-And add click on add to compare in product2
+Given click on the Decor dropdown in the homePage
+And select Wall art from the dropdown
+When it is navigated to the next page hover on product1
+And click on add to compare to add the product1 to compare
+Then User should hover on the Product2
+And add Product2 to add to compare
 And click on compare button
-Then cpature screenshot and navigate back to home page
+Then cpature screenshot and navigate back to home page from wall art page
 
-Scenario: user should verify the about us section in the footer
+Scenario: User should verify the About Us Page by verifying the text
 
-Given user should click on the about us in footer
-When navigated to about us page verify the text present 
-Then Take screen shot and navigate from about us page to home page
+Given User should click on the About us in the footer section
+When it is navigated to About us page verify the text in the page
+Then take snapshot of the About us page and navigate back to the home page
 
 Scenario: verify the text in the shipping and delivery in the footer
 

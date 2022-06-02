@@ -243,40 +243,38 @@ public class StepDefinition  extends BaseClass{
     }
 
    //compare products
-    
-    @Given("^user should click Decor section$")
-    public void user_should_click_decor_section() throws Throwable {
+    @Given("^click on the Decor dropdown in the homePage$")
+    public void click_on_the_decor_dropdown_in_the_homepage() throws Throwable {
     	home.clickValueBuysinDocker();
 		Thread.sleep(2000);
     }
     
-    @And("^click on the WallMirror in the decor dropdown$")
-    public void click_on_the_wallmirror_in_the_decor_dropdown() throws Throwable {
+    @And("^select Wall art from the dropdown$")
+    public void select_wall_art_from_the_dropdown() throws Throwable {
     	cp.clickMirror();
 		Thread.sleep(2000);
     }
 
-    @When("^navigated to result page haver on product 1$")
-    public void navigated_to_result_page_haver_on_product_1() throws Throwable {
+    @When("^it is navigated to the next page hover on product1$")
+    public void it_is_navigated_to_the_next_page_hover_on_product1() throws Throwable {
     	cp.product1hover();
 		Thread.sleep(2000);
     }
-
-    @And("^add product1 to add to compare$")
-    public void add_product1_to_add_to_compare() throws Throwable {
+    
+    @And("^click on add to compare to add the product1 to compare$")
+    public void click_on_add_to_compare_to_add_the_product1_to_compare() throws Throwable {
     	cp.addp1();
 		Thread.sleep(2000);
     }
-    
-    @Then("^user should hover on the product2 $")
+
+    @Then("^User should hover on the Product2$")
     public void user_should_hover_on_the_product2() throws Throwable {
     	cp.product2hover();
 		Thread.sleep(2000);
     }
     
-
-    @And("^add click on add to compare in product2$")
-    public void add_click_on_add_to_compare_in_product2() throws Throwable {
+    @And("^add Product2 to add to compare$")
+    public void add_product2_to_add_to_compare() throws Throwable {
     	cp.addp2();
 		Thread.sleep(2000);
     }
@@ -287,33 +285,39 @@ public class StepDefinition  extends BaseClass{
 		Thread.sleep(2000);
     }
 
-    @Then("^cpature screenshot and navigate back to home page$")
-    public void cpature_screenshot_and_navigate_back_to_home_page() throws Throwable {
+    @Then("^cpature screenshot and navigate back to home page from wall art page$")
+    public void cpature_screenshot_and_navigate_back_to_home_page_from_wall_art_page() throws Throwable {
     	SnapShots.captureScreen(driver, "Compare");
 		navigateHome();
     }
 
+
+
     //ABout us
     
-    @Given("^user should click on the about us in footer$")
-    public void user_should_click_on_the_about_us_in_footer() throws Throwable {
+    @Given("^User should click on the About us in the footer section$")
+    public void user_should_click_on_the_about_us_in_the_footer_section() throws Throwable {
     	home.clickAboutUs();
 		Thread.sleep(2000);
     }
 
-    @When("^navigated to about us page verify the text present $")
-    public void navigated_to_about_us_page_verify_the_text_present() throws Throwable {
+    @When("^it is navigated to About us page verify the text in the page$")
+    public void it_is_navigated_to_about_us_page_verify_the_text_in_the_page() throws Throwable {
     	ap.verifyPage();
 		Thread.sleep(2000);
     }
 
-    @Then("^Take screen shot and navigate from about us page to home page$")
-    public void take_screen_shot_and_navigate_from_about_us_page_to_home_page() throws Throwable {
+    @Then("^take snapshot of the About us page and navigate back to the home page$")
+    public void take_snapshot_of_the_about_us_page_and_navigate_back_to_the_home_page() throws Throwable {
     	SnapShots.captureScreen(driver, "AboutUs");
 		navigateHome();
+
     }
 
+
   //shipping and delivery
+    
+    
     
     @Given("^click on the shipping & delivery in the footer$")
     public void click_on_the_shipping_delivery_in_the_footer() throws Throwable {
